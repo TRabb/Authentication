@@ -30,7 +30,12 @@
         </div>
     </div>
     <div class="form-group">
+        @Html.LabelFor(m=>m.UserRole, new { @class="col-md-2 control-lavel"})
         <div class="col-md-offset-2 col-md-10">
+            @Html.RadioButtonFor(M => M.UserRole, "Admin", new { @class = "radio-inline" }) @Html.Label("Admin")
+            @Html.RadioButtonFor(M => M.UserRole, "Manager", new { @class = "radio-inline" }) @Html.Label("Manager")
+            @Html.RadioButtonFor(M => M.UserRole, "User", new { @class = "radio-inline" }) @Html.Label("User")
+            @Html.RadioButtonFor(M => M.UserRole, "Visitor", new { @class = "radio-inline" }) @Html.Label("Visitor")
             <input type="submit" class="btn btn-default" value="Register" />
         </div>
     </div>

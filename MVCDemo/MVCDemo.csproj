@@ -162,6 +162,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationContextMigrations\202003101716482_InitialCreate.cs" />
+    <Compile Include="ApplicationContextMigrations\202003101716482_InitialCreate.Designer.cs">
+      <DependentUpon>202003101716482_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationContextMigrations\202004081948457_Initial.cs" />
+    <Compile Include="ApplicationContextMigrations\202004081948457_Initial.Designer.cs">
+      <DependentUpon>202004081948457_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationContextMigrations\202004081958063_UserRoles.cs" />
+    <Compile Include="ApplicationContextMigrations\202004081958063_UserRoles.Designer.cs">
+      <DependentUpon>202004081958063_UserRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationContextMigrations\Configuration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -171,6 +184,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MembershipsController.cs" />
+    <Compile Include="DataContextMigrations\202004081947382_Initial.cs" />
+    <Compile Include="DataContextMigrations\202004081947382_Initial.Designer.cs">
+      <DependentUpon>202004081947382_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContextMigrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,6 +278,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationContextMigrations\202003101716482_InitialCreate.resx">
+      <DependentUpon>202003101716482_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationContextMigrations\202004081948457_Initial.resx">
+      <DependentUpon>202004081948457_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationContextMigrations\202004081958063_UserRoles.resx">
+      <DependentUpon>202004081958063_UserRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContextMigrations\202004081947382_Initial.resx">
+      <DependentUpon>202004081947382_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

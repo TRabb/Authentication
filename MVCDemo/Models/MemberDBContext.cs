@@ -8,6 +8,7 @@ namespace MVCDemo.Models
 {
     public class MemberDBContext : DbContext
     {
+        public MemberDBContext() : base("DEfaultConnection") { }
         public DbSet<Membership> Members { get; set; }
     }
 }
